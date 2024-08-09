@@ -18,5 +18,6 @@ export default function renderImageCard(images) {
       `
     )
     .join('');
-  gallery.innerHTML = markup;
+  gallery.insertAdjacentHTML('beforeend', markup);
+  // gallery.innerHTML = markup;
 }

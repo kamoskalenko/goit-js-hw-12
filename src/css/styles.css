@@ -18,13 +18,14 @@ body {
   letter-spacing: 0.64px;
   padding: 20px;
 }
-input,
+/* input,
 button {
   font-family: inherit;
   line-height: inherit;
-}
+} */
 p {
   margin: 0;
+  padding: 0;
 }
 .search-form {
   display: flex;
@@ -61,16 +62,19 @@ input:hover {
 
 input:focus {
   outline: transparent;
-  border: 1px solid teal;
+  border: 1px solid rgb(196, 91, 17);
 }
 
 button {
-  display: inline-flex;
+  display: block;
   padding: 8px 16px;
+  /* min-width: 125px; */
+  min-height: 40px;
+  height: auto;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: teal;
+  background: rgb(232, 95, 49);
   border: none;
 
   color: #fff;
@@ -79,5 +83,13 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: rgb(52, 171, 171);
+  background: rgb(223, 78, 29);
+}
+
+.load-more-btn {
+  margin: 30px auto 0;
+}
+
+.is-hidden {
+  display: none;
 }
