@@ -4,7 +4,7 @@ const URL = 'https://pixabay.com/api/';
 
 async function getImages(query, page = 1, limit = 15) {
   const params = new URLSearchParams({
-    key: '45193945-2152fc57bbe1d57bc87d8ed4b',
+    key: '',
     q: query,
     image_type: 'photo',
     orientation: 'horizontal',
